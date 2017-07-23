@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+     <ion-title>{{ titleMenu }}</ion-title> 
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-tabs [selectedIndex]=1 >
+      <!-- <ion-tab [root]="tab1Root" tabIcon="ios-camera"     (ionSelect)="ChangeTitle(1)"></ion-tab>  -->
+      <ion-tab [root]="tab2Root" tabIcon="ios-add-circle" (ionSelect)="ChangeTitle(2)"></ion-tab> 
+      <ion-tab [root]="tab3Root" tabIcon="list-box"       (ionSelect)="ChangeTitle(3)"></ion-tab>
+    </ion-tabs>
+</ion-content>

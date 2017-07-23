@@ -1,0 +1,10 @@
+<ion-content padding>
+  <h2>Выберите блок</h2>
+  <ion-list>
+    <ion-row>
+     <!-- <button ion-item *ngFor="let b of blocks" col-6> -->
+        <button *ngFor="let b of blocks" ion-button [navPush]="pushPage" [navParams]="params">{{b}}</button>
+    </ion-row>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-content>
+<ion-list>
+<ion-item *ngFor="let note of noteList">
+<div>
+<p>Value: {{note.volume_value}}</p>
+<p>User: {{note.user_id}}</p>
+<p>Flowmeter: {{note.block_id}} - {{note.cell_id}} - {{note.flowmeter_id}}</p>
+</div>
+
+</ion-item>
+</ion-list>
+  <!-- <ion-card *ngFor="let p of model">
+    <ion-card-content>
+      <ion-item on-hold="onHold()">
+        <ion-icon name="checkmark-circle-outline"  item-start></ion-icon>
+          <div class="row">
+            <h2></h2><h2>3</h2>-<h2>2</h2>-<h2>1</h2>-<h2>1</h2>
+          </div>
+          <div class="row">
+            <h3></h3><h3>Q1, м3/ч:</h3><h3>1234</h3>
+          </div>
+          <h4>11:11 11.11.2017</h4>
+      </ion-item>
+
+    </ion-card-content>
+  </ion-card> -->
+
+</ion-content>
